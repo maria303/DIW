@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="estilosmenu.css">
+    </head>
+    <body>
+        <ul class="menu">
+            <li onClick="f1(this)" id="1" class="items"><a class="items__enlace">Item 1</a>
+                <ul id="sub__item--open" class="sub__items">
+                    <li onClick="f1(this)" id="si1"><a class="items__enlace">Sub-item 1</a>
+                        <ul id="sub__item--open" class="sub__items">
+                            <li><a class="items__enlace">Thing 1</a></li>
+                            <li><a class="items__enlace">Thing 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="items__enlace">Sub-item 2</a></li>
+                    <li><a class="items__enlace">Thing 1</a></li>
+                    <li><a class="items__enlace">Thing 2</a></li>
+                </ul>
+            </li>
+            <li onClick="f1(this)" id="2" class="items"><a class="items__enlace">Item 2</a>
+                <ul id="sub__item--open" class="sub__items">
+                    <li><a class="items__enlace">Thing 1</a></li>
+                    <li><a class="items__enlace">Thing 2</a></li>
+                </ul>
+            </li>
+            <li onClick="f1(this)" id="3" class="items"><a class="items__enlace">Item 3</a>
+                <ul id="sub__item--open" class="sub__items">
+                    <li><a class="items__enlace">Thing 1</a></li>
+                    <li><a class="items__enlace">Thing 2</a></li>
+                </ul>
+            </li>
+            <li onClick="f1(this)" id="4" class="items"><a class="items__enlace">Item 4</a>
+                <ul id="sub__item--open" class="sub__items">
+                    <li><a class="items__enlace">Thing 1</a></li>
+                    <li><a class="items__enlace">Thing 2</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <br><br>
+        
+        <script>
+            function f1(elemento){
+                var item = document.getElementById(elemento.id).getElementsByTagName("ul")[0];
+                item.classList.toggle("open");
+            }
+        </script>
+    </body>
+</html>
