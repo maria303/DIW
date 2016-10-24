@@ -1,0 +1,19 @@
+@each $format, $color--primary in $format--variations {
+    .panel--#{$format} {
+        box-shadow: 2px 2px 10px (lighten($color--primary, 20%));
+    }
+}
+
+@each $format, $color--primary in $format--variations {
+    .panel__header--#{$format} {
+        background-color: $color--primary;
+        color: (darken($color--primary, 30%));
+        border-color: (darken($color--primary, 20%));
+    }
+}
+
+@each $format, $color--primary in $format--variations {
+    .panel__body--#{$format} {
+        border-color: (darken($color--primary, 20%));
+    }
+}

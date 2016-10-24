@@ -10,12 +10,18 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="estilosmenu.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome-4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="resetcss.css">
+        <!--[if lt IE 9]>
+            <script src="html5shiv.js"></script>
+            <script src="respond.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <ul class="menu">
-            <li onClick="f1(this)" id="1" class="items"><a class="items__enlace">Item 1</a>
+        <!--<ul class="menu">
+            <li onClick="f1(this)" id="0" class="items vertical-menu__item--0"><a class="items__enlace">Item 1</a>
                 <ul id="sub__item--open" class="sub__items">
-                    <li onClick="f1(this)" id="si1"><a class="items__enlace">Sub-item 1</a>
+                    <li onClick="f1(this)" id="si1" class="sub__item"><a class="items__enlace">Sub-item 1</a>
                         <ul id="sub__item--open" class="sub__items">
                             <li><a class="items__enlace">Thing 1</a></li>
                             <li><a class="items__enlace">Thing 2</a></li>
@@ -26,19 +32,19 @@ and open the template in the editor.
                     <li><a class="items__enlace">Thing 2</a></li>
                 </ul>
             </li>
-            <li onClick="f1(this)" id="2" class="items"><a class="items__enlace">Item 2</a>
+            <li onClick="f1(this)" id="1" class="items vertical-menu__item--1"><a class="items__enlace">Item 2</a>
                 <ul id="sub__item--open" class="sub__items">
                     <li><a class="items__enlace">Thing 1</a></li>
                     <li><a class="items__enlace">Thing 2</a></li>
                 </ul>
             </li>
-            <li onClick="f1(this)" id="3" class="items"><a class="items__enlace">Item 3</a>
+            <li onClick="f1(this)" id="2" class="items vertical-menu__item--2"><a class="items__enlace">Item 3</a>
                 <ul id="sub__item--open" class="sub__items">
                     <li><a class="items__enlace">Thing 1</a></li>
                     <li><a class="items__enlace">Thing 2</a></li>
                 </ul>
             </li>
-            <li onClick="f1(this)" id="4" class="items"><a class="items__enlace">Item 4</a>
+            <li onClick="f1(this)" id="3" class="items vertical-menu__item--3"><a class="items__enlace">Item 4</a>
                 <ul id="sub__item--open" class="sub__items">
                     <li><a class="items__enlace">Thing 1</a></li>
                     <li><a class="items__enlace">Thing 2</a></li>
@@ -46,13 +52,97 @@ and open the template in the editor.
             </li>
         </ul>
         
-        <br><br>
+        <br><br>-->
+        
+        
+        <ul class="menu">
+            <li class="directorio--close" onclick="f1(this)" id="0"><a href="#" class="enlace" >Item 1</a>
+                <ul class="vertical-menu vertical-menu__item-0">
+                    <li class="directorio--close"><a href="#" class="sub__enlace" onclick="f1(this)" id="1--1">Sub-item 1</a>
+                        <ul class="vertical-menu vertical-menu__item--1--1">
+                            <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="directorio--close"><a href="#" class="sub__enlace">Sub-item 2</a></li>
+                    <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
+                    <li class="documento"><a href="#" class="sub__enlace">Thing 2</a></li>
+                </ul>
+            </li>
+            <li class="directorio--close" onclick="f1(this)" id="1"><a href="#" class="enlace">Item 2</a>
+                <ul class="vertical-menu vertical-menu__item-1">
+                    <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
+                </ul>
+            </li>
+            <li class="directorio--close" onclick="f1(this)" id="2"><a href="#" class="enlace">Item 3</a>
+                <ul class="vertical-menu vertical-menu__item-2">
+                    <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+       <!-- mike <style>
+            
+            
+        </style>
+        
+        <ul>
+            <li id="1" class="vertical-menu-0--close" onclick="f1(this)"><a href="#">Item 1</a>
+                <ul id="h1" class="ul-hide">
+                    <li class="vertical-menu__item-0--close"><a href="#" onclick="f1(this)">Sub-item 1</a>
+                        <ul>
+                            <li><a href="#">Thing 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="vertical-menu__item-0--close"><a href="#">Sub-item 2</a></li>
+                    <li><a href="#">Thing 1</a></li>
+                    <li><a href="#">Thing 2</a></li>
+                </ul>
+            </li>
+            <li ><a href="#" onclick="f1(this)">Item 2</a>
+                <ul>
+                    <li><a href="#">Thing 1</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="f1(this)">Item 3</a>
+                <ul>
+                    <li><a href="#">Thing 1</a></li>
+                </ul>
+            </li>
+        </ul>
+        -->
         
         <script>
             function f1(elemento){
-                var item = document.getElementById(elemento.id).getElementsByTagName("ul")[0];
-                item.classList.toggle("open");
+                var item2 = document.getElementsByClassName("vertical-menu__item-"+elemento.id)[0];
+                item2.classList.toggle("vertical-menu__item-"+elemento.id+"--open");
+                var item3 = document.getElementById(elemento.id);
+                item3.classList.toggle("directorio--open");
+                
+                var i, menus;
+                var menus = document.getElementsByClassName("vertical-menu");
+                for(i = 0; i<menus.length; i++){
+                    if(i != elemento.id){
+                        //menus[i].classList.toggle("vertical-menu__item--"+i+"--close");
+                    }
+                }
+                //var item = document.getElementsByTagName("ul")[elemento.id];
+                //item.classList.toggle("vertical-menu__item--"+elemento.id+"--open");
+                
+                
+                ////
+                /*var item = document.getElementById(elemento.id);
+                var itemOcultar = document.getElementById("h"+elemento.id);
+                if(item.className === "vertical-menu-0--close"){
+                    item.className = "vertical-menu-0--open";
+                    itemOcultar.className = "ul-displayed";
+                }else{
+                    item.className = "vertical-menu-0--close";
+                    itemOcultar.className = "ul-hide";
+                }*/
+                ////
+
             }
+                
         </script>
     </body>
 </html>

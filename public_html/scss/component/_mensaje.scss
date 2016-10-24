@@ -1,0 +1,8 @@
+@each $format, $color--primary in $format--variations {
+    .mensaje--#{$format} {
+        background-color: (lighten($color--primary, 20%));
+        border-color: $color--primary;
+        color: (darken($color--primary, 20%));
+        box-shadow: 2px 2px 10px (lighten($color--primary, 20%));
+    }
+}

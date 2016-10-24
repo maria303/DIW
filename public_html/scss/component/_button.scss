@@ -1,0 +1,21 @@
+.boton{
+    border-radius: 6px;
+    display: inline-block;
+    border-width: 1px;
+    color: $button-color;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@each $format, $color--primary in $format--variations {
+    .boton--#{$format} {
+        background-color: $color--primary;
+        border-color: (darken($color--primary, 10%));
+        &:hover {
+            background-color: (darken($color--primary, 10%));
+        }
+        &:active {
+            box-shadow: inset 0px 4px (darken($color--primary, 20%));
+        }
+    }
+}
