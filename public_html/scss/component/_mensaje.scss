@@ -1,8 +1,12 @@
+.mensaje{
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    @include mensaje-generic(#AAAAAA);
+}
+
 @each $format, $color--primary in $format--variations {
     .mensaje--#{$format} {
-        background-color: (lighten($color--primary, 20%));
-        border-color: $color--primary;
-        color: (darken($color--primary, 20%));
-        box-shadow: 2px 2px 10px (lighten($color--primary, 20%));
+        @include mensaje-generic($color--primary);
     }
 }

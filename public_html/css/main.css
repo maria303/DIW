@@ -123,7 +123,13 @@ sup {
   border-width: 1px;
   color: #FFFFFF;
   padding: 10px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #AAAAAA;
+  border-color: #919191; }
+  .boton:hover {
+    background-color: #919191; }
+  .boton:active {
+    box-shadow: inset 0px 4px #777777; }
 
 .boton--primary {
   background-color: #337AB7;
@@ -164,6 +170,39 @@ sup {
     background-color: #c9302c; }
   .boton--danger:active {
     box-shadow: inset 0px 4px #a02622; }
+
+.boton--extra_small {
+  font-size: 5px;
+  padding: 5px; }
+
+.boton--small {
+  font-size: 10px;
+  padding: 10px; }
+
+.boton--large {
+  font-size: 15px;
+  padding: 15px; }
+
+.panel {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px #dddddd; }
+
+.panel__header {
+  padding: 10px 15px;
+  border: 1px solid;
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 0px;
+  background-color: #AAAAAA;
+  color: #5e5e5e;
+  border-color: #777777; }
+
+.panel__body {
+  padding: 15px 15px;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 0px 0px 4px 4px;
+  border-color: #777777; }
 
 .panel--primary {
   box-shadow: 2px 2px 10px #77acd9; }
@@ -219,6 +258,15 @@ sup {
 
 .panel__body--danger {
   border-color: #a02622; }
+
+.mensaje {
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: #dddddd;
+  border-color: #AAAAAA;
+  color: #777777;
+  box-shadow: 2px 2px 10px #dddddd; }
 
 .mensaje--primary {
   background-color: #77acd9;

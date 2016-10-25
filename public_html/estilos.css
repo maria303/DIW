@@ -152,7 +152,7 @@ and open the template in the editor.
 }
 
 .mensaje{
-    background-color: #AAAAAA;
+    background-color: #000000;
     padding: 20px;
     border: 1px solid;
     border-radius: 4px;
@@ -251,7 +251,6 @@ and open the template in the editor.
 
 .paginacion{
     display: inline;
-    list-style-type: none;
 }
 
 .paginacion__enlace{
