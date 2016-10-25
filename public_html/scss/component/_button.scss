@@ -8,13 +8,13 @@
     @include button-generic(#AAAAAA);
 }
 
-@each $format, $color--primary in $format--variations {
-    .boton--#{$format} {
+@each $type-name, $color--primary in $functionalities {
+    .boton--#{$type-name} {
         @include button-generic($color--primary);
     }
 }
-@for $i from 1 through length($tamanyos){
-    .boton--#{nth($tamanyos, $i)} {
+@for $i from 1 through length($sizes){
+    .boton--#{nth($sizes, $i)} {
     font-size: $i*5px;
     padding: $i*5px;
     }

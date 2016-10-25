@@ -5,7 +5,7 @@
     @include mensaje-generic(#AAAAAA);
 }
 
-@each $format, $color--primary in $format--variations {
+@each $format, $color--primary in $functionalities {
     .mensaje--#{$format} {
         @include mensaje-generic($color--primary);
     }

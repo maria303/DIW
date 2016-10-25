@@ -20,19 +20,19 @@
     @include panel__body-generic(#AAAAAA);
 }
 
-@each $format, $color--primary in $format--variations {
+@each $format, $color--primary in $functionalities {
     .panel--#{$format} {
         @include panel-generic($color--primary);
     }
 }
 
-@each $format, $color--primary in $format--variations {
+@each $format, $color--primary in $functionalities {
     .panel__header--#{$format} {
         @include panel__header-generic($color--primary);
     }
 }
 
-@each $format, $color--primary in $format--variations {
+@each $format, $color--primary in $functionalities {
     .panel__body--#{$format} {
         @include panel__body-generic($color--primary);
     }
