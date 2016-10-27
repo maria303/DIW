@@ -8,8 +8,8 @@
     @include button-generic(#AAAAAA);
 }
 
-@each $type-name, $color--primary in $functionalities {
-    .boton--#{$type-name} {
+@each $functionality-name, $color--primary in $functionalities {
+    .boton--#{$functionality-name} {
         @include button-generic($color--primary);
     }
 }
