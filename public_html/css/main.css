@@ -183,6 +183,51 @@ sup {
   font-size: 15px;
   padding: 15px; }
 
+.boton__Falcon9 {
+  color: #FFE440;
+  background-color: #6549D7;
+  border-color: #100873;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  border: 2px solid;
+  padding: 15px; }
+
+.boton__FalconHeavy {
+  color: #FFD300;
+  background-color: #7EB12C;
+  border-color: #138900;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  border: 2px solid;
+  padding: 15px; }
+
+.menu__elemento {
+  border: 1px solid;
+  border-right: 0px;
+  float: left;
+  border-color: #CCCCCC;
+  border-collapse: collapse; }
+  .menu__elemento:first-child {
+    border-color: #CCCCCC;
+    border-radius: 2px; }
+  .menu__elemento:last-child {
+    border-right: 1px solid;
+    border-color: #CCCCCC;
+    border-radius: 2px; }
+
+.menu__elemento--selected {
+  background-color: #b7b7b7; }
+
+.menu__enlace {
+  padding: 10px;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  width: 100%;
+  height: 100%; }
+
 .panel {
   box-sizing: border-box;
   border-radius: 4px;
@@ -297,3 +342,12 @@ sup {
   border-color: #D9534F;
   color: #a02622;
   box-shadow: 2px 2px 10px #eba5a3; }
+
+.seccion {
+  text-align: center; }
+
+.seccion__Falcon9 {
+  background-color: #FFBA73; }
+
+.seccion__FalconHeavy {
+  background-color: #BD63D4; }

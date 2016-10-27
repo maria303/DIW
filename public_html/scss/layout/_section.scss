@@ -1,0 +1,9 @@
+.seccion{
+    text-align: center;
+}
+
+@each $rocket, $background-color in $seccion-rocket {
+    .seccion__#{$rocket} {
+        @include section__rocket-generic($background-color);
+    }
+}

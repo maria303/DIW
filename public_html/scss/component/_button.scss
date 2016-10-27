@@ -19,3 +19,9 @@
     padding: $i*5px;
     }
 }
+
+@each $rocket, $color, $background-color, $border-color in $button-rocket {
+    .boton__#{$rocket} {
+        @include button__rocket-generic($color, $background-color, $border-color);
+    }
+}
