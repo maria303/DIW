@@ -1,6 +1,7 @@
 .panel{
     box-sizing: border-box;
     border-radius: 4px;
+    margin-bottom: 20px;
     @include panel-generic(#AAAAAA);
 }
 
