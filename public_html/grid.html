@@ -40,103 +40,139 @@ and open the template in the editor.
     </head>
     <body>
         <div class="row">
-        <div class="col-3" style="height: 600px">
-            <ul class="menu">
-            <li class="directorio--close" onclick="f1(this)" id="0"><a href="#" class="enlace" >Item 1</a>
-                <ul class="vertical-menu vertical-menu__item-0">
-                    <li class="directorio--close"><a href="#" class="sub__enlace" onclick="f1(this)" id="1--1">Sub-item 1</a>
-                        <ul class="vertical-menu vertical-menu__item--1--1">
-                            <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
-                        </ul>
-                    </li>
-                    <li class="directorio--close"><a href="#" class="sub__enlace">Sub-item 2</a></li>
-                    <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
-                    <li class="documento"><a href="#" class="sub__enlace">Thing 2</a></li>
-                </ul>
-            </li>
-            <li class="directorio--close" onclick="f1(this)" id="1"><a href="#" class="enlace">Item 2</a>
-                <ul class="vertical-menu vertical-menu__item-1">
-                    <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
-                </ul>
-            </li>
-            <li class="directorio--close" onclick="f1(this)" id="2"><a href="#" class="enlace">Item 3</a>
-                <ul class="vertical-menu vertical-menu__item-2">
-                    <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
-                </ul>
-            </li>
-        </ul>
-        </div>
-            
-        <div class="col-6">
-            
-            <div class="col-12">
-                <div class="panel">
-                    <div class="panel__header">
-                        Cabecera
-                    </div>
-                    <div class="panel__body">
-                        <p>Contenido <br> Mas contenido</p>
-                    </div>
-                </div>
+            <div class="col-2" style="height: 600px">
+                <ul class="menu">
+                <li class="directorio--close" onclick="f1(this)" id="0"><a href="#" class="enlace" >Item 1</a>
+                    <ul class="vertical-menu vertical-menu__item-0">
+                        <li class="directorio--close"><a href="#" class="sub__enlace" onclick="f1(this)" id="1--1">Sub-item 1</a>
+                            <ul class="vertical-menu vertical-menu__item--1--1">
+                                <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
+                            </ul>
+                        </li>
+                        <li class="directorio--close"><a href="#" class="sub__enlace">Sub-item 2</a></li>
+                        <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
+                        <li class="documento"><a href="#" class="sub__enlace">Thing 2</a></li>
+                    </ul>
+                </li>
+                <li class="directorio--close" onclick="f1(this)" id="1"><a href="#" class="enlace">Item 2</a>
+                    <ul class="vertical-menu vertical-menu__item-1">
+                        <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
+                    </ul>
+                </li>
+                <li class="directorio--close" onclick="f1(this)" id="2"><a href="#" class="enlace">Item 3</a>
+                    <ul class="vertical-menu vertical-menu__item-2">
+                        <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
+                    </ul>
+                </li>
+            </ul>
             </div>
             
-            <div class="col-7">
-                <div class="panel panel--primary">
-                    <div class="panel__header panel__header--primary">
-                        Cabecera
+            <div class="col-10">
+                <div class="col-6 row">
+                    <div class="col-6 row dashboard__container">
+                        <div class="panel">
+                            <div class="panel__header">
+                                Cabecera
+                            </div>
+                            <div class="panel__body">
+                                <p>Contenido <br> Mas contenido</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="panel__body panel__body--primary">
-                        <p>Contenido <br> Mas contenido</p>
+                    <div class="col-6 row dashboard__container">
+                        <div class="panel panel--primary">
+                            <div class="panel__header panel__header--primary">
+                                Cabecera
+                            </div>
+                            <div class="panel__body panel__body--primary">
+                                <p>Contenido <br> Mas contenido</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 row dashboard__container">
+                        <div class="mensaje">
+                            Mensaje
+                        </div>
+                    </div>
+                    <div class="col-12 row dashboard__container">
+                        <div class="mensaje mensaje--primary">
+                            Mensaje
+                        </div>
+                    </div>
+                    <div class="col-12 row dashboard__container">
+                        <div class="mensaje mensaje--success">
+                            Mensaje
+                        </div>
+                    </div>
+
+                    <div class="col-5 row dashboard__container">
+                        <div class="panel panel--success">
+                            <div class="panel__header panel__header--success">
+                                Cabecera
+                            </div>
+                            <div class="panel__body panel__body--success">
+                                <p>Contenido <br> Mas contenido</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-7 row dashboard__container">
+                        <div class="panel panel--info">
+                            <div class="panel__header panel__header--info">
+                                Cabecera
+                            </div>
+                            <div class="panel__body panel__body--info">
+                                <p>Contenido <br> Mas contenido</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-5">
-                <div class="panel panel--success">
-                    <div class="panel__header panel__header--success">
-                        Cabecera
+
+                <div class="col-6 row">
+                    <div class="col-12 row dashboard__container">
+                        <div class="mensaje mensaje--info">
+                            Mensaje
+                        </div>
                     </div>
-                    <div class="panel__body panel__body--success">
-                        <p>Contenido <br> Mas contenido</p>
+                    
+                    <div class="col-12 row dashboard__container">
+                        <div class="mensaje mensaje--warning">
+                            Mensaje
+                        </div>
                     </div>
-                </div>
-            </div>
-            
-            <div class="col-4">
-                <div class="panel panel--info">
-                    <div class="panel__header panel__header--info">
-                        Cabecera
+                    
+                    <div class="col-12 row dashboard__container">
+                        <div class="mensaje mensaje--danger">
+                            Mensaje
+                        </div>
                     </div>
-                    <div class="panel__body panel__body--info">
-                        <p>Contenido <br> Mas contenido</p>
+
+                    <div class="col-8 row dashboard__container">
+                        <div class="panel panel--warning">
+                            <div class="panel__header panel__header--warning">
+                                Cabecera
+                            </div>
+                            <div class="panel__body panel__body--warning">
+                                <p>Contenido <br> Mas contenido</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            
-            <div class="col-4">
-                <div class="panel panel--warning">
-                    <div class="panel__header panel__header--warning">
-                        Cabecera
-                    </div>
-                    <div class="panel__body panel__body--warning">
-                        <p>Contenido <br> Mas contenido</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-4">
-                <div class="panel panel--danger">
-                    <div class="panel__header panel__header--danger">
-                        Cabecera
-                    </div>
-                    <div class="panel__body panel__body--danger">
-                        <p>Contenido <br> Mas contenido</p>
+
+                    <div class="col-4 row dashboard__container">
+                        <div class="panel panel--danger">
+                            <div class="panel__header panel__header--danger">
+                                Cabecera
+                            </div>
+                            <div class="panel__body panel__body--danger">
+                                <p>Contenido <br> Mas contenido</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
-        </div>
             
-        <div class="col-2 offset-1 border">TODO write content</div>
         </div>
         
         <div>

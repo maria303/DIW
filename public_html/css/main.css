@@ -344,6 +344,15 @@ sup {
   color: #a02622;
   box-shadow: 2px 2px 10px #eba5a3; }
 
+.cabecera__contenedor {
+  background-color: #35383D;
+  height: 20px; }
+
+.dashboard__container {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .seccion {
   text-align: center; }
 
