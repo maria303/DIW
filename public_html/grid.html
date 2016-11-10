@@ -14,6 +14,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="estilosmenu.css">
         <link rel="stylesheet" type="text/css" href="font-awesome-4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="resetcss.css">
+        
         <!--[if lt IE 9]>
             <script src="html5shiv.js"></script>
             <script src="respond.js"></script>
@@ -68,8 +69,8 @@ and open the template in the editor.
             </div>
             
             <div class="col-10">
-                <div class="col-6 row">
-                    <div class="col-6 row dashboard__container">
+                <div class="col-6 ">
+                    <div class="col-6 dashboard__container">
                         <div class="panel">
                             <div class="panel__header">
                                 Cabecera
@@ -79,7 +80,7 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 row dashboard__container">
+                    <div class="col-6 dashboard__container">
                         <div class="panel panel--primary">
                             <div class="panel__header panel__header--primary">
                                 Cabecera
@@ -90,34 +91,37 @@ and open the template in the editor.
                         </div>
                     </div>
 
-                    <div class="col-12 row dashboard__container">
+                    <div class="col-12 dashboard__container">
                         <div class="mensaje">
                             Mensaje
                         </div>
                     </div>
-                    <div class="col-12 row dashboard__container">
-                        <div class="mensaje mensaje--primary">
+                    
+                    
+                    
+                    
+                </div>
+                <div class="col-6 row">
+                    <div class="col-12 dashboard__container">
+                        <div class="mensaje mensaje--info">
                             Mensaje
                         </div>
                     </div>
-                    <div class="col-12 row dashboard__container">
-                        <div class="mensaje mensaje--success">
+                    
+                    <div class="col-12 dashboard__container">
+                        <div class="mensaje mensaje--warning">
                             Mensaje
                         </div>
                     </div>
-
-                    <div class="col-5 row dashboard__container">
-                        <div class="panel panel--success">
-                            <div class="panel__header panel__header--success">
-                                Cabecera
-                            </div>
-                            <div class="panel__body panel__body--success">
-                                <p>Contenido <br> Mas contenido</p>
-                            </div>
+                    
+                    <div class="col-12 dashboard__container">
+                        <div class="mensaje mensaje--danger">
+                            Mensaje
                         </div>
                     </div>
-
-                    <div class="col-7 row dashboard__container">
+                </div>
+                    <div class="col-12">
+                    <div class="col-4 dashboard__container">
                         <div class="panel panel--info">
                             <div class="panel__header panel__header--info">
                                 Cabecera
@@ -127,28 +131,53 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
+                    <div class="col-4">
+                        <div class="col-6 dashboard__container">
+                            <input type="button" value="Generic" class="boton"/>
+                        </div>
+                        <div class="col-6 dashboard__container">
+                            <input type="button" value="Primary" class="boton boton--primary"/>
+                        </div>
+                        <div class="col-6 dashboard__container">
+                            <input type="button" value="Success" class="boton boton--success"/>
+                        </div>
+                        <div class="col-6 dashboard__container">
+                            <input type="button" value="Info" class="boton boton--info"/>
+                        </div>
+                    </div>
+                        
+                    <div class="col-4 dashboard__container">
+                        <div class="panel panel--success">
+                            <div class="panel__header panel__header--success">
+                                Cabecera
+                            </div>
+                            <div class="panel__body panel__body--success">
+                                <p>Contenido <br> Mas contenido</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6">
+                    
+                        
+                        
+                        
+                    <div class="col-12 dashboard__container">
+                        <div class="mensaje mensaje--primary">
+                            Mensaje
+                        </div>
+                    </div>
+                    <div class="col-12 dashboard__container">
+                        <div class="mensaje mensaje--success">
+                            Mensaje
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-6 row">
-                    <div class="col-12 row dashboard__container">
-                        <div class="mensaje mensaje--info">
-                            Mensaje
-                        </div>
-                    </div>
+                <div class="col-6">
                     
-                    <div class="col-12 row dashboard__container">
-                        <div class="mensaje mensaje--warning">
-                            Mensaje
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 row dashboard__container">
-                        <div class="mensaje mensaje--danger">
-                            Mensaje
-                        </div>
-                    </div>
-
-                    <div class="col-8 row dashboard__container">
+                    <div class="col-8 dashboard__container">
                         <div class="panel panel--warning">
                             <div class="panel__header panel__header--warning">
                                 Cabecera
@@ -159,7 +188,7 @@ and open the template in the editor.
                         </div>
                     </div>
 
-                    <div class="col-4 row dashboard__container">
+                    <div class="col-4 dashboard__container">
                         <div class="panel panel--danger">
                             <div class="panel__header panel__header--danger">
                                 Cabecera
@@ -169,8 +198,46 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-
+                
+                <div class="col-12 row">
+                    <div class="col-4">
+                        <div class="col-12">
+                            <div class="col-4 offset-4 dashboard__container">
+                                <input type="button" value="Large button" class="boton boton--primary boton--large"/>
+                            </div>
+                        </div>
+                        <div class="col-12 dashboard__container">
+                            <div class="col-4 offset-4 dashboard__container">
+                                <input type="button" value="Default button" class="boton boton--primary boton--default"/>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-4">
+                        <div class="col-12 dashboard__container">
+                            <input type="button" value="Warning" class="boton boton--warning"/>
+                        </div>
+                        <div class="col-12 dashboard__container">
+                            <input type="button" value="Danger" class="boton boton--danger"/>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="col-12">
+                            <div class="col-4 offset-4 dashboard__container">
+                                <input type="button" value="Small button" class="boton boton--primary boton--small"/>
+                            </div>
+                        </div>
+                        <div class="col-12 dashboard__container">
+                            <div class="col-4 offset-4 dashboard__container">
+                                <input type="button" value="Extra small button" class="boton boton--primary boton--extra_small"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             
         </div>

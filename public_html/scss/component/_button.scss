@@ -5,6 +5,11 @@
     color: $button-color;
     padding: 10px;
     box-sizing: border-box;
+    //////////
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    //////////
     @include button-generic(#AAAAAA);
 }
 
@@ -17,7 +22,14 @@
     .boton--#{nth($sizes, $i)} {
     font-size: $i*5px;
     padding: $i*5px;
+    width: auto;
     }
+}
+
+.boton--default{
+    width: auto;
+    padding-top: auto;
+    padding-bottom: auto;
 }
 
 @each $rocket, $color, $background-color, $border-color in $button-rocket {

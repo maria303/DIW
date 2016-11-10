@@ -124,6 +124,9 @@ sup {
   color: #FFFFFF;
   padding: 10px;
   box-sizing: border-box;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #AAAAAA;
   border-color: #919191; }
   .boton:hover {
@@ -173,15 +176,23 @@ sup {
 
 .boton--extra_small {
   font-size: 5px;
-  padding: 5px; }
+  padding: 5px;
+  width: auto; }
 
 .boton--small {
   font-size: 10px;
-  padding: 10px; }
+  padding: 10px;
+  width: auto; }
 
 .boton--large {
   font-size: 15px;
-  padding: 15px; }
+  padding: 15px;
+  width: auto; }
+
+.boton--default {
+  width: auto;
+  padding-top: auto;
+  padding-bottom: auto; }
 
 .boton__Falcon9 {
   color: #FFE440;
