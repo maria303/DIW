@@ -28,3 +28,68 @@
     width: 100%;
     height: 100%;
 }
+
+////////menú responsive
+
+.main-menu:after {
+    content: "";
+    clear:both;
+    display: block;
+}
+ 
+.main-menu__item {
+    /*padding: 10px;*/
+    color: white;
+    background-color: #4D5158;
+}
+ 
+.main-menu__hamburger {
+    padding: 10px;
+    color: white;
+    background-color: #4D5158;    
+}
+ 
+// pantalla xicoteta 
+@media  (max-width: 499px) {
+    .main-menu__item {
+        float:none;
+        display:none;
+    }
+    .main-menu__hamburger {
+        display: inline-block;
+    }
+    
+    .enlace-hamb{
+        text-decoration: none;
+        color: white;
+    }
+     
+    .main-menu {
+        position:absolute;
+        /*top:19px;*/
+        left:0px;
+    }
+     
+    .main-menu__item--visible {
+        display:list-item;
+    }
+    .main-menu__item--hide {
+        display:none;
+    }
+}
+
+//pantalla gran
+@media  (min-width: 500px) {
+    .main-menu__item {
+/*        float:left;
+        display:list-item;*/
+    }
+     
+    .main-menu__hamburger {
+        display: none;
+    }
+ 
+    .main-menu {
+        position: static;      
+    }
+}

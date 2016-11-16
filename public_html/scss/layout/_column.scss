@@ -1,0 +1,13 @@
+@each $nombre, $tamanyo in $size-column{
+    @media (min-width: $tamanyo){
+        @for $i from 1 through $num-cols{
+            .col-#{$nombre}-#{$i}{
+                float:left;
+                width: ((100/$num-cols)*$i)*1%;
+            }
+            .offset-#{$nombre}-#{$i}{
+                margin-left:((100/$num-cols)*$i)*1%;
+            }
+        }
+    } 
+}
