@@ -35,6 +35,18 @@ and open the template in the editor.
                 }
 
             }
+            
+            ////////menú hamburguesa
+            function toggleVisibilityMenu() { 
+                var elements = document.getElementsByClassName("main-menu__item"); 
+                for (var i = 0; i < elements.length; i++) { 
+                    if (elements[i].className.indexOf("main-menu__item--visible") >= 0) { 
+                        elements[i].className = " main-menu__item main-menu__item--hide"; 
+                    } else { 
+                        elements[i].className = "main-menu__item main-menu__item--visible"; 
+                    } 
+                } 
+            }
                 
         </script>
         
@@ -42,8 +54,11 @@ and open the template in the editor.
     <body>
         <div class="row">
             <div class="col-2" style="height: 600px">
-                <ul class="menu">
-                <li class="directorio--close" onclick="f1(this)" id="0"><a href="#" class="enlace" >Item 1</a>
+                <ul class="menu main-menu">
+                    <li class="main-menu__hamburger">
+                        <a href="javascript:void(0);" class="enlace-hamb" onclick="toggleVisibilityMenu()">☰</a>
+                    </li>
+                <li class="directorio--close main-menu__item" onclick="f1(this)" id="0"><a href="#" class="enlace" >Item 1</a>
                     <ul class="vertical-menu vertical-menu__item-0">
                         <li class="directorio--close"><a href="#" class="sub__enlace" onclick="f1(this)" id="1--1">Sub-item 1</a>
                             <ul class="vertical-menu vertical-menu__item--1--1">
@@ -55,12 +70,12 @@ and open the template in the editor.
                         <li class="documento"><a href="#" class="sub__enlace">Thing 2</a></li>
                     </ul>
                 </li>
-                <li class="directorio--close" onclick="f1(this)" id="1"><a href="#" class="enlace">Item 2</a>
+                <li class="directorio--close main-menu__item" onclick="f1(this)" id="1"><a href="#" class="enlace">Item 2</a>
                     <ul class="vertical-menu vertical-menu__item-1">
                         <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
                     </ul>
                 </li>
-                <li class="directorio--close" onclick="f1(this)" id="2"><a href="#" class="enlace">Item 3</a>
+                <li class="directorio--close main-menu__item" onclick="f1(this)" id="2"><a href="#" class="enlace">Item 3</a>
                     <ul class="vertical-menu vertical-menu__item-2">
                         <li class="documento"><a href="#" class="sub__enlace">Thing 1</a></li>
                     </ul>
